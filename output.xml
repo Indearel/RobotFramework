@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.6 on win32)" generated="20220607 22:56:44.188" rpa="false" schemaversion="3">
+<suite id="s1" name="First" source="C:\Repos\Robot\tests\first.robot">
+<test id="s1-t1" name="Opening and checking current weather on the webpage" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://m.meteo.pl</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220607 22:56:44.446" level="INFO">Opening browser 'chrome' to base url 'https://m.meteo.pl'.</msg>
+<status status="PASS" starttime="20220607 22:56:44.446" endtime="20220607 22:56:47.143"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${POPUP_CLOSE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220607 22:56:47.143" level="INFO">Clicking element '//span[@claa="css-1hgkzif"]'.</msg>
+<msg timestamp="20220607 22:56:47.597" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220607 22:56:47.597" level="FAIL">Element with locator '//span[@claa="css-1hgkzif"]' not found.</msg>
+<status status="FAIL" starttime="20220607 22:56:47.143" endtime="20220607 22:56:47.597"/>
+</kw>
+<status status="FAIL" starttime="20220607 22:56:44.438" endtime="20220607 22:56:47.597">Element with locator '//span[@claa="css-1hgkzif"]' not found.</status>
+</test>
+<doc>A test suite for current weather.</doc>
+<status status="FAIL" starttime="20220607 22:56:44.196" endtime="20220607 22:56:47.597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="First">First</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
